@@ -46,7 +46,7 @@ Demonstrar uma implementação de chat em tempo real usando:
 ### 1. Clonar o Repositório
 
 ```bash
-git clone <seu-repositorio-url>
+git clone https://github.com/Gabrielsoac/live-chat.git
 cd livechatms
 ```
 
