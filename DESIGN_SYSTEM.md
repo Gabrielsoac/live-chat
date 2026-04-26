@@ -571,20 +571,15 @@ receipt:77
 
 ### 4. Por que Message Broker em Memória?
 
-**Pros**:
+**Prós**:
 - Simples, sem dependências externas
 - Adequado para desenvolvimento
 - Fácil de entender
 
-**Cons**:
+**Contras**:
 - Não persiste mensagens
 - Não escala para múltiplos servidores
 - Perde histórico ao restart
-
-**Para Produção**:
-- Usar RabbitMQ, Kafka ou Redis
-- Implementar persistência
-- Load balancing
 
 ### 5. Por que Records Java?
 
@@ -684,28 +679,6 @@ Cliente ──► WebSocket Upgrade (HTTP Upgrade)
 
 ---
 
-## Escalabilidade Futura
-
-### Fase 1: Atual (Simples)
-- Message broker em memória
-- Single server
-- Sem persistência
-
-### Fase 2: Intermediária
-- RabbitMQ como broker
-- Banco de dados para histórico
-- JWT Authentication
-
-### Fase 3: Produção
-- Kafka para streaming
-- Múltiplos servidores (load balanced)
-- Cache distribuído (Redis)
-- Full audit logging
-- Rate limiting
-- Monitoring (Prometheus)
-
----
-
 ## Referências Técnicas
 
 ### Spring Framework
@@ -724,5 +697,3 @@ Cliente ──► WebSocket Upgrade (HTTP Upgrade)
 - [Spring Security](https://spring.io/projects/spring-security)
 
 ---
-
-**Design System v1.0** | Última atualização: Abril de 2026
