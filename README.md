@@ -240,23 +240,7 @@ spring.application.name=livechatms
 - Observe os logs de conexão STOMP
 - Verifique as mensagens WebSocket em **Network** → **WS**
 
-## Escalabilidade
-
-Para produção, considere:
-
-1. **Message Broker Externo**: RabbitMQ, Kafka, Redis
-2. **Load Balancer**: Distribuir conexões entre múltiplos servers
-3. **Persistência**: Banco de dados para histórico
-4. **Autenticação**: Spring Security, JWT
-5. **Validação**: Bean Validation com `@Valid`
-6. **SSL/TLS**: WebSocket seguro (`wss://`)
-
 ## Troubleshooting
-
-### Conexão WebSocket não estabelece
-- Verifique se a porta 8080 está aberta
-- Confirme que JavaScript está habilitado
-- Verifique o console do navegador para erros
 
 ### Mensagens não chegam
 - Verifique a conexão STOMP no console
