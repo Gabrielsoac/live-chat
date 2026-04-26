@@ -1,5 +1,5 @@
 package tech.gabrielsoac.livechatms.domain;
 
-public record ChatOutput(String message) {
+public record ChatOutput(String content) {
     
 }

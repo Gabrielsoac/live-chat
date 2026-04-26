@@ -1,5 +1,5 @@
 const stompClient = new StompJs.Client({
-  brokerURL: "ws://" + window.location.host + "/buildrun-livechat-websocket",
+  brokerURL: "ws://" + window.location.host + "/gabrielsoac-livechat",
 });
 
 stompClient.onConnect = (frame) => {
@@ -43,7 +43,7 @@ function sendMessage() {
   stompClient.publish({
     destination: "/app/new-message",
     body: JSON.stringify({
-      user: $("#user").val(),
+      username: $("#user").val(),
       message: $("#message").val(),
     }),
   });
